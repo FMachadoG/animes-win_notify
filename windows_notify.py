@@ -89,39 +89,26 @@ def create_actions(external_links: list) -> list[str]:
     :return list[str]
     """
     # CREATE ACTION STREAMER
+    dir_images_sites = f'{dir_project}\\img\\streaming-logo'
+
     streaming = ['Crunchyroll', 'Netflix', 'Bilibili TV']
     actions = []
+    anime_streaming = [li for li in external_links if li['site'] in streaming]
 
-    for site in external_links:
-        if site['site'] in streaming:
-            if site['site'] == streaming[0]:
-                image_crunch = f'{dir_project}\\' \
-                    'img\\streaming-logo\\crunchyroll_logo_icon.png'
+    for site in anime_streaming:
+        name_image = site["site"].lower().replace(' ', '_')
+        image_streaming = f'{dir_images_sites}\\{name_image}_logo_icon.png'
 
-                actions.append(insert_action(
-                    site['site'],
-                    image_crunch,
-                    site['url']
-                ))
+        if len(anime_streaming) == 3 and site['site'] == streaming[0]:
+            short_cruchy_action = insert_action(
+                'Crunch', image_streaming, site['url'])
 
-            elif site['site'] == streaming[1]:
-                image_netflix = f'{dir_project}\\' \
-                    'img\\streaming-logo\\netflix_logo_icon.png'
+            actions.append(short_cruchy_action)
 
-                actions.append(insert_action(
-                    site['site'],
-                    image_netflix,
-                    site['url']
-                ))
+        else:
+            site_action = insert_action(
+                site['site'], image_streaming, site['url'])
 
-            else:
-                image_bili = f'{dir_project}\\' \
-                    'img\\streaming-logo\\bilibili_logo_icon.png'
-
-                actions.append(insert_action(
-                    site['site'],
-                    image_bili,
-                    site['url']
-                ))
+            actions.append(site_action)
 
     return actions
