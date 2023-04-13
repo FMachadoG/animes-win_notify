@@ -48,9 +48,12 @@ def notification_windows_today():
         anime_date_airing = animes['f_date_airing']
 
         while True:
-            time.sleep(3)
+            time.sleep(1)
             # GET DATETIME IN TIMEZONE America/Sao_Paulo
+            # COMMENT FOR TEST USING TIME OF WINDOWS
             datetime_now = util.get_datetime_sao_paulo()
+            # TIME OF WINDOWS
+            # datetime_now = datetime.now()
 
             # REMOVE SECONDS AND CONVERT TO TIMESTAMP
             pop_seconds = util.format_date(datetime_now, date_type.Datetime1)
@@ -74,6 +77,7 @@ def notification_windows_today():
                     action_sites=actions
                 )
 
+                # NOT REMOVE IF IMAGE IS DEFAULT
                 if path_image[0]:
                     time.sleep(3)
                     os.remove(path_image[1])
