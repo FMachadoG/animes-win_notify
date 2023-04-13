@@ -80,8 +80,8 @@ def notification_windows_today():
 
                 break
 
-            print(f'Current time:   {datetime_now}')
-            print(f'Next release:   {anime_date_airing}\n')
+            print(f' - Current time:   {datetime_now}')
+            print(f' - Next release:   {anime_date_airing}\n')
             time.sleep(2)
 
 
