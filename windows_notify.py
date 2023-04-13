@@ -8,7 +8,7 @@ tString = r"""
 	<visual>
 		<binding template="ToastGeneric" >
 			<text hint-callScenarioCenterAlign="true">{title}</text>
-			<text hint-callScenarioCenterAlign="true">Episódio {episode} foi ao ar.</text>
+			<text hint-callScenarioCenterAlign="true">Episode {episode} aired.</text>
 			<image src="{image_anime}"/>
 			<group>
                 <subgroup>
@@ -25,7 +25,7 @@ tString = r"""
 			activationType="protocol" 
 			arguments="{url_anilist}"/>
 		<action 
-			content="Cancelar" 
+			content="Cancel" 
 			arguments=""/>
 	</actions>
 </toast>
