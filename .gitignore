@@ -131,3 +131,4 @@ dmypy.json
 # project
 config.py
 .idea
+test.py
