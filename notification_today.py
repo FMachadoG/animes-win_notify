@@ -51,9 +51,9 @@ def notification_windows_today():
             time.sleep(1)
             # GET DATETIME IN TIMEZONE America/Sao_Paulo
             # COMMENT FOR TEST USING TIME OF WINDOWS
-            datetime_now = util.get_datetime_sao_paulo()
+            # datetime_now = util.get_datetime_sao_paulo()
             # TIME OF WINDOWS
-            # datetime_now = datetime.now()
+            datetime_now = datetime.now()
 
             # REMOVE SECONDS AND CONVERT TO TIMESTAMP
             pop_seconds = util.format_date(datetime_now, date_type.Datetime1)
