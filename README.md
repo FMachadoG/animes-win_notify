@@ -24,3 +24,8 @@ The button site AniList will always be informad, redirect to anime AniList site.
 
 #### Video
 https://vimeo.com/817997238
+
+### Contact
+***E-mail:*** filipemachado.g@gmail.com <br>
+***LinkedIn:*** https://www.linkedin.com/in/filipemachadog/ <br>
+***AniList:*** https://anilist.co/user/AstroN1/
