@@ -23,4 +23,4 @@ The button site AniList will always be informad, redirect to anime AniList site.
 </div>
 
 #### Video
-https://player.vimeo.com/video/817997238
+https://vimeo.com/817997238
