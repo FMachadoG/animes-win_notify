@@ -17,9 +17,10 @@ The button site AniList will always be informad, redirect to anime AniList site.
 ```
 #### Images
 <div style="align-items: center; float: left;">
-  <img src="/img/doc/terminal_info.png" alt="Terminal informations." style="float: left; padding: 5px; height: 350px;"/>
-  <img src="/img/doc/notify_dr_stone_ep2.png" alt="Windows notification Dr. Stone Ep 2" style="float: left; padding: 5px; height: 350px;"/>
-  <img src="/img/doc/notify_bojji_ep1.png" alt="Windows notification Ousama Ranking Ep 1" style="float: left; padding: 5px; height: 350px;"/>
+  <img src="/img/doc/terminal_info.png" alt="Terminal informations." style="float: left; padding: 5px; height: 250px;"/>
+  <img src="/img/doc/notify_dr_stone_ep2.png" alt="Windows notification Dr. Stone Ep 2" style="float: left; padding: 5px; height: 250px;"/>
+  <img src="/img/doc/notify_bojji_ep1.png" alt="Windows notification Ousama Ranking Ep 1" style="float: left; padding: 5px; height: 250px;"/>
 </div>
 
 #### Video
+...
